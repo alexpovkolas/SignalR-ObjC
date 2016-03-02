@@ -74,9 +74,9 @@ typedef void (^SRWebSocketStartBlock)(id response, NSError *error);
     SRLogWSDebug(@"will send data on websocket %@", data);
     [_webSocket send:data];
     
-    if(block) {
-        block(nil,nil);
-    }
+//    if(block) {
+//        block(nil,nil);
+//    }
 }
 
 - (void)abort:(id <SRConnectionInterface>)connection timeout:(NSNumber *)timeout connectionData:(NSString *)connectionData {
